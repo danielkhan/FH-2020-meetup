@@ -38,7 +38,7 @@ async getListWithDetails() {
 ```
 
 You'll the have to call this function from the respective route amd provide the data to the `render()`.
-Look at [the index route](./server/routes/index.js) to see how we passed in `SpeakerService` instance to use it in the route handler then.
+Look at [the index route](./routes/index.js) to see how we passed in `SpeakerService` instance to use it in the route handler then.
 
 > Hint: You have to pass on `params` and then you can use a [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to get it in the respective route submodule.
 
