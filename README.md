@@ -25,7 +25,7 @@ Your task is to make this page dynamic.
 This is very similar to what we've done already for the index page:
 
 * Create an `.ejs` file that contains just the parts of the HTML template that are not part of the main layout.
-* To provide the needed data for this particular view, you'll need a new function in [SpeakerService](./services/SpeakerService.js):
+* To provide the needed data for this particular view, you'll need a new function in [SpeakerService](./services/SpeakerService.js#L74):
 
 ```js
 /**
@@ -53,7 +53,7 @@ As for the overview page, your task is again to make this page dynamic.
 
 You need all the details for a speaker provided by `shortname` (url param) and you also want to show only the artwork of this speaker.
 
-To provide the needed data for this particular view, you'll need two new methods in [SpeakerService](./services/SpeakerService.js):
+To provide the needed data for this particular view, you'll need two new methods in [SpeakerService](./services/SpeakerService.js#L43):
 
 ```js
 /**
