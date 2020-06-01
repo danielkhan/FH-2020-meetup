@@ -25,7 +25,7 @@ Your task is to make this page dynamic.
 This is very similar to what we've done already for the index page:
 
 * Create an `.ejs` file that contains just the parts of the HTML template that are not part of the main layout.
-* To provide the needed data for this particular view, you'll need a new function in [SpeakersService](./services/SpeakersService.js):
+* To provide the needed data for this particular view, you'll need a new function in [SpeakerService](./services/SpeakerService.js):
 
 ```js
 /**
@@ -38,7 +38,7 @@ async getListWithDetails() {
 ```
 
 You'll the have to call this function from the respective route amd provide the data to the `render()`.
-Look at [the index route](./server/routes/index.js) to see how we passed in `SpeakersService` instance to use it in the route handler then.
+Look at [the index route](./server/routes/index.js) to see how we passed in `SpeakerService` instance to use it in the route handler then.
 
 > Hint: You have to pass on `params` and then you can use a [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to get it in the respective route submodule.
 
@@ -53,7 +53,7 @@ As for the overview page, your task is again to make this page dynamic.
 
 You need all the details for a speaker provided by `shortname` (url param) and you also want to show only the artwork of this speaker.
 
-To provide the needed data for this particular view, you'll need two new methods in [SpeakersService](./services/SpeakersService.js):
+To provide the needed data for this particular view, you'll need two new methods in [SpeakerService](./services/SpeakerService.js):
 
 ```js
 /**
